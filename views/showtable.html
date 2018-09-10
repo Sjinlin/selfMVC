@@ -1,0 +1,36 @@
+<div class="list_container" style="">
+    <ul> 
+        <li class="new_table italics"> 
+            <div class="block"><i></i> 
+                <span class="hide pos2_name">tables</span> 
+                <span class="hide pos2_value">0</span> 
+                </div><div class="block "> 
+                <a href="tbl_create.php?server=1&amp;db=exercise&amp;token=3fdc756068bd776f9c83f21e064c736d"> 
+                    <img src="http://39.106.151.0/self-mvc/public/homePage_files/dot.gif" title="新建" alt="新建" class="icon ic_b_table_add"></a>
+                </div> 
+            <a class="hover_show_full" href="#" title="" type="createTable" value="<?=$database?>">新建</a>
+            <div class="clearfloat"></div> 
+            </li>
+
+        <?php foreach($arr as $k=>$v){?>
+        <li class="table">
+        <div class="block"><i></i><b></b> 
+            <a class="expander" href="#"> 
+                <span class="hide aPath">cm9vdA==.ZXhlcmNpc2U=.dGFibGVz.c3R1</span> 
+                <span class="hide vPath">cm9vdA==.ZXhlcmNpc2U=.6KGo.c3R1</span> 
+                <span class="hide pos">0</span> 
+                <span class="hide pos2_name">tables</span> 
+                <span class="hide pos2_value">0</span> 
+                <img src="http://39.106.151.0/self-mvc/public/homePage_files/dot.gif" title="扩展/收起" alt="扩展/收起" class="icon ic_b_plus" name="show_list" type="table" value="<?=$v?>" database="<?=$database?>"></a></div>
+        <div class="block "> 
+            <a href="tbl_structure.php?server=1&amp;db=exercise&amp;table=stu&amp;token=3fdc756068bd776f9c83f21e064c736d"> 
+                <img src="http://39.106.151.0/self-mvc/public/homePage_files/dot.gif" title="结构" alt="结构" class="icon ic_b_props">
+                </a> 
+            </div> 
+        <a class="hover_show_full" href="#" title="浏览" type="table" value="<?=$v?>" database="<?=$database?>"><?=$v?></a>
+        <div class="clearfloat"></div> 
+        </li>
+        <?php }?>
+
+
+    </ul></div>

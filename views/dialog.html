@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹窗UI测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="http://39.106.151.0/self-mvc/public/css/global.css">
+    <link rel="stylesheet" href="http://39.106.151.0/self-mvc/public/css/animate.css">
+    <link rel="stylesheet" href="http://39.106.151.0/self-mvc/public/css/dialog.css">
+</head>
+<script src="http://39.106.151.0/self-mvc/public/js/dialog.js"></script>
+<style>
+    body,html{
+        /*display: flex;
+        justify-content: center;
+        align-items: center;*/
+    }
+
+    /*.div-testDialog{
+        width: 500px;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .div-testDialog button{
+        margin:  10px;
+    }
+    @media screen and ( max-width: 460px){
+        .div-testDialog{
+            width: 90%;
+        }
+    }*/
+</style>
+
+<body>
+<div class="div-testDialog">
+
+    <button class="dw-btn btn-primary has-hover" onclick="javascript:$('body').dialog({type:'primary',showBoxShadow:true,buttons:[{name: '确定',className: 'defalut'}],discription:'也许有点问题!',animateIn:'fadeInRight-hastrans',animateOut:'fadeOutRight-hastrans'})">animate动画效果fadeInRight-hastrans</button>
+
+</div>
+</body>
+<script src="http://39.106.151.0/self-mvc/public/js/jquery.js"></script>
+<script src="http://39.106.151.0/self-mvc/public/js/dialog.js"></script>
+</html>
